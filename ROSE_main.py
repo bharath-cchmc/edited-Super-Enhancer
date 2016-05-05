@@ -238,7 +238,7 @@ def main():
 
 
     from optparse import OptionParser
-    usage = "usage: %prog [options] -g [GENOME] -i [INPUT_REGION_GFF] -r [RANKBY_BAM_FILE] -o [OUTPUT_FOLDER] [OPTIONAL_FLAGS]"
+    usage = "usage: %prog [options] -g [INPUT_GENOME] -i [INPUT_REGION_GFF] -r [RANKBY_BAM_FILE] -o [OUTPUT_FOLDER] [OPTIONAL_FLAGS]"
     parser = OptionParser(usage = usage)
     #required flags
     parser.add_option("-i","--i", dest="input",nargs = 1, default=None,
@@ -248,7 +248,7 @@ def main():
     parser.add_option("-o","--out", dest="out",nargs = 1, default=None,
                       help = "Enter an output folder")
     parser.add_option("-g","--genome", dest="genome",nargs = 1, default=None,
-                      help = "Enter the genome build (MM9,MM8,HG18,HG19)")
+                      help = "Reference genome file: example- hg18_refseq.ucsc")
     
     #optional flags
     parser.add_option("-b","--bams", dest="bams",nargs = 1, default=None,
@@ -299,6 +299,7 @@ def main():
         os.system('cp %s %s' % (inputGFFFile,gffFolder))        
 
 
+
     #GETTING THE LIST OF BAMFILES TO PROCESS
     if options.control:        
         bamFileList = [options.rankby,options.control]
@@ -329,19 +330,21 @@ def main():
     #GETTING THE GENOME
     genome = options.genome
     print('USING %s AS THE GENOME' % genome)
-
+    
 
     #GETTING THE CORRECT ANNOT FILE
     cwd = os.getcwd()
-    genomeDict = {
-        'HG18':'%s/annotation/hg18_refseq.ucsc' % (cwd),
-        'MM9': '%s/annotation/mm9_refseq.ucsc' % (cwd),
-        'HG19':'%s/annotation/hg19_refseq.ucsc' % (cwd),
-        'MM8': '%s/annotation/mm8_refseq.ucsc' % (cwd),
-        'MM10':'%s/annotation/mm10_refseq.ucsc' % (cwd),
-        }
+##    genomeDict = {
+##        'HG18':'%s/annotation/hg18_refseq.ucsc' % (cwd),
+##        'MM9': '%s/annotation/mm9_refseq.ucsc' % (cwd),
+##        'HG19':'%s/annotation/hg19_refseq.ucsc' % (cwd),
+##        'MM8': '%s/annotation/mm8_refseq.ucsc' % (cwd),
+##        'MM10':'%s/annotation/mm10_refseq.ucsc' % (cwd),
+##        }
+    
+    annotFile = genome
 
-    annotFile = genomeDict[upper(genome)]
+##    annotFile = genomeDict[upper(genome)]
 
     #MAKING THE START DICT
     print('MAKING START DICT')
