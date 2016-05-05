@@ -12,9 +12,11 @@ and
 [Selective Inhibition of Tumor Oncogenes by Disruption of Super-enhancers Jakob Lovén, Heather A. Hoke, Charles Y. Lin, Ashley Lau, David A. Orlando, Christopher R. Vakoc, James E. Bradner, Tong Ihn Lee, and Richard A. Young Cell 153, 320-334, April 11, 2013]
 
 SOFTWARE AUTHORS: Charles Y. Lin, David A. Orlando, Brian J. Abraham
+
 ACKNOWLEDGEMENTS: Graham Ruby
 
-CURRENT SCRIPT AUTHOR: Bharath Manicka Vasaga,
+CURRENT SCRIPT AUTHOR: Bharath Manicka Vasagam,
+
 CONTACT: bharath.manickavasagam@cchmc.org
 
 [Dr. Artem Barski] -The Barski Laboratory, Cincinnati Children's Hospital, Cincinnati, OH 45229.
