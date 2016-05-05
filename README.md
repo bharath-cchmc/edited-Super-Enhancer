@@ -1,5 +1,5 @@
 # Edited-Super-Enhancer
-Changes made to [Young Lab] script for it to be accomodated  into a docker hub
+Changes made to [Young Lab] script so that it can be wrapped into a docker container
 
 1. Relevant [Docker] container: 
 
