@@ -11,7 +11,7 @@ import sys
 
 
 
-import ROSE_utils
+import /usr/local/'bin'/ROSE_utils
 
 
 import os

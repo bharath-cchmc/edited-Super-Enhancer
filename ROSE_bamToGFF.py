@@ -5,7 +5,7 @@
 import sys
 import re
 
-import ROSE_utils
+import /usr/local/'bin'/ROSE_utils
 
 
 from collections import defaultdict
