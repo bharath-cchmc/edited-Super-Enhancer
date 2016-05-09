@@ -484,12 +484,12 @@ def main():
 
         rankbyName = options.rankby.split('/')[-1]
         controlName = options.control.split('/')[-1]
-        cmd = 'R --no-save %s %s %s %s < ROSE_callSuper.R' % (outFolder,outputFile1,inputName,controlName)
+        cmd = 'R --no-save %s %s %s %s < /usr/local/bin/ROSE_callSuper.R' % (outFolder,outputFile1,inputName,controlName)
 
     else:
         rankbyName = options.rankby.split('/')[-1]
         controlName = 'NONE'
-        cmd = 'R --no-save %s %s %s %s < ROSE_callSuper.R' % (outFolder,outputFile1,inputName,controlName)
+        cmd = 'R --no-save %s %s %s %s < /usr/local/bin/ROSE_callSuper.R' % (outFolder,outputFile1,inputName,controlName)
     print(cmd)
     os.system(cmd)
 
