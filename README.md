@@ -41,3 +41,7 @@ CONTACT: bharath.manickavasagam@cchmc.org
    [Ace Editor]: <http://ace.ajax.org>
    [Master Transcription Factors and Mediator Establish Super-Enhancers at Key Cell Identity Genes Warren A. Whyte, David A. Orlando, Denes Hnisz, Brian J. Abraham, Charles Y. Lin, Michael H. Kagey, Peter B. Rahl, Tong Ihn Lee and Richard A. Young Cell 153, 307-319, April 11, 2013]: <http://www.cell.com/abstract/S0092-8674(13)00392-9>
 [Selective Inhibition of Tumor Oncogenes by Disruption of Super-enhancers Jakob Lovén, Heather A. Hoke, Charles Y. Lin, Ashley Lau, David A. Orlando, Christopher R. Vakoc, James E. Bradner, Tong Ihn Lee, and Richard A. Young Cell 153, 320-334, April 11, 2013]: <http://www.cell.com/abstract/S0092-8674(13)00393-0>
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/bharath-cchmc/edited-super-enhancer/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
